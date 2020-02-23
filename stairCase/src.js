@@ -18,12 +18,12 @@ function stepCount()
 	let ways;
 	let arr = [1, 3, 5];
     let len, i , n
-    n =parseInt(prompt("please give the length of steps"));
-    let arrayString = prompt("please enter comma seprated values for")
+    n =parseInt(prompt("Enter the length of stair"));
+    let arrayString = prompt("Enter the number of steps. eg(1,3,5)")
     arr = arrayString.split(',');
 	ways = numOfWays(n, arr);
-	document.body.innerHTML = ways;
-	console.log("Total number of ways: %d", ways);
+	document.body.innerHTML = "Total number of ways to climb up the stair is: " + ways;
+	console.log("Total number of ways %d", ways);
 	return 0;
 }
 

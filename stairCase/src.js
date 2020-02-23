@@ -16,10 +16,10 @@ function numOfWays( n, arr)
 function stepCount()
 {
 	let ways;
-	let arr = [1, 3, 5];
+	let arr = [];
     let len, i , n
     n =parseInt(prompt("Enter the length of stair"));
-    let arrayString = prompt("Enter the number of steps. eg(1,3,5)")
+    let arrayString = prompt("Enter the number of steps. eg(1,3,5 || 1,2 || 1)")
     arr = arrayString.split(',');
 	ways = numOfWays(n, arr);
 	document.body.innerHTML = "Total number of ways to climb up the stair is: " + ways;
